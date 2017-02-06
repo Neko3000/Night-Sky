@@ -1,0 +1,369 @@
+body{
+    font-family: "Yu Mincho";
+    font-weight: 500;
+    background-color: white;
+}
+.center-container{
+    position:relative;
+}
+.center-object{
+    margin: 0 auto;
+}
+@media(max-width:970px){
+    .center-object-xs-sm{
+        margin: 0 auto;
+    }
+}
+.md-center-object{
+    margin: 0 auto;
+}
+
+section{
+    position: relative;
+    z-index: 10;
+}
+.navbar-glass{
+    position: relative;
+    z-index: 20;
+}
+.navbar{
+    border: none;
+    margin-bottom: 0;
+}
+
+.navbar-glass button.navbar-toggle{
+    background-color:none;
+    border: white solid 1px;
+
+    opacity: 0.7;
+
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+.navbar-glass button.navbar-toggle:hover{
+    opacity: 1;
+}
+.navbar-glass button.navbar-toggle>span.icon-bar{
+    background-color:white; 
+}
+/*collpsed*/
+@media(max-width:768px){
+    .navbar-glass .navbar-links{
+        position: relative;
+        top:8px;
+        width: 100%;
+
+        float: none;
+    }
+    .navbar-glass ul{
+        /*rewrite*/
+        background-color: #121c3c;
+
+        margin:0 0;
+        text-align: center;
+    }
+
+    .navbar-glass ul li:hover{
+        background-color:white;
+    }
+    .navbar-glass .navbar-links ul.nav>li>a:focus,.navbar-glass .navbar-links ul.nav>li>a:hover{
+        color: #121c3c;
+    }
+}
+
+.main-navbar{
+    padding:7px 0;
+    height: 66px;
+    margin-bottom: 21px;
+    background-image: url('../img/cp1_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.navbar-links{
+    float: right;
+}
+
+.navbar-links ul li{
+    font-size: 16px;
+}
+.navbar-links ul>li>a{
+    color: white;
+    background: none;
+    opacity: 0.7;
+
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+.navbar-links ul>li>a:focus,.navbar-links ul.nav>li>a:hover{
+    color: white;
+    background: none;
+    opacity: 1;
+}
+
+.board>img{
+    width: 100%;
+}
+
+.story-group{
+    padding: 51px 0;
+}
+.single-story-block{
+    padding-top:45px;
+    padding-bottom:45px;
+}
+.clear-collpse:before,.clear-collpse:after{
+    content: ' ';
+    display: table;
+}
+.single-story-block-cell{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.single-story-block h3{
+    margin:14px 0 28px 0;
+
+    text-align: center;
+    font-size:24px;
+    color: #333333;
+}
+.single-story-block p{
+    line-height: 1.1;
+    font-size:16px;
+    color:#494949;
+}
+
+.constellation-group{
+    padding-top: 25px;
+    padding-bottom:25px;
+    background-color: #121c3c;
+}
+.single-constellation-block{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.single-constellation-block-cell{
+    padding-top:16px;
+    padding-bottom:16px;
+}
+.single-constellation-block .single-constellation-block-cell{
+    font-size: 14px;
+    color:white;
+}
+
+/*reuseable*/
+.plain-block{
+    padding-top:20px;
+    padding-bottom: 20px;
+
+    text-align: center;
+}
+.plain-text{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.plain-text h3{
+    font-size:24px;
+    color:#333333;
+
+    margin-bottom: 40px;
+}
+.plain-text p{
+    font-size:16px;
+    color:#494949;
+
+    padding:10px 0;
+
+    letter-spacing: -1px;
+}
+.horizonal-img{
+    padding-top:17px;
+    padding-bottom: 17px;
+}
+
+.vertical-text{
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode:vertical-rl;
+}
+.poem{
+    height: 607px;
+    padding: 64px 0;
+    background-color: #121c3c;
+}
+.poem-block{
+    height: 479px;
+    position: relative;
+}
+.poem-block .text-block{
+    height: 100%;
+    position: relative;
+}
+.poem-block p{
+    color:white;
+    font-size:18px;
+
+}
+.poem-block p{
+    height:100%;
+    line-height: 2.5;
+    margin: 0 0;
+}
+.poem .poem-block img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.xs-sm-editor{
+    padding-top: 30px;
+    text-align: right;
+}
+@media(max-width:970px){
+    .vertical-text{
+        writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+        -webkit-writing-mode:horizontal-tb;
+    }
+    .poem-block{
+        height: auto;
+    }
+    .poem{
+        height: auto;
+    }
+}
+
+.waiting{
+    margin:44px 0;
+    background-image: url("../img/30325796161_1e123feb39_k.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.waiting span{
+    display: block;
+    padding:139px 0;
+    color: white;
+    font-size: 30px;
+    text-align:center;
+}
+
+footer{
+    padding:45px 0;
+    font-family: "Meiryo UI";
+    color:white;
+    background-color:#06021d;
+}
+
+.external-link-block{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+ul.external-link-content{
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none;
+
+}
+.external-link-header{
+    margin-bottom:20px;
+    font-size: 16px;
+    display: block;
+}
+.external-link-content{
+    font-size: 12px;
+    display: block;
+}
+
+.external-link-content li{
+    padding:2px 0;
+}
+.external-link-content li a{
+    color:white;
+    opacity: 0.7;
+
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+
+}
+.external-link-content li a:hover,.external-link-cotent li a:focus{
+    color:white;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/*reuseable*/
+.social-button-group{
+    display: inline-block;
+    width:100%;
+}
+.social-button-group ul{
+    float: right;
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none;
+}
+.social-button-group li{
+    padding:0 3px;
+    float:right;
+}
+.social-button-group ul li a img{
+    width:30px;
+    height:30px;
+}
+.social-button-group ul li a{
+    margin: 0 0;
+    padding: 0 0;
+    display: block;
+    line-height: 1;
+}
+
+.a-hidden{
+    opacity: 0;
+}
+.a-visible{
+    opacity: 1;
+}
+
+/*simple fadeInUp*/
+.s-animated {
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes s-fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes s-fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.s-fadeInUp {
+  -webkit-animation-name: s-fadeInUp;
+  animation-name: s-fadeInUp;
+}
